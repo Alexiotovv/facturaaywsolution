@@ -1,0 +1,8 @@
+---
+  deployment:
+    tasks:
+      - export DEPLOYPATH=/home/aywsolutionweli/public_html/factura.aywsolution.com/
+      - /bin/rsync -av public/ $DEPLOYPATH
+      - export DEPLOYPATH=/home/aywsolutionweli/web_factura/
+      - /bin/rsync -av ./ $DEPLOYPATH
+
